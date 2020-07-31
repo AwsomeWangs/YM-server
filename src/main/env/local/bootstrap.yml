@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: lin-jia-publish
+  profiles:
+    active: local
+  cloud:
+    config:
+      #本地开发禁用配置中心
+      enabled: false
+
+#注册中心
+eureka:
+  client:
+    serviceUrl:
+       defaultZone: http://localhost:1111/eureka/
+  instance:
+    preferIpAddress: true
+    ipAddress: ${spring.cloud.client.ipAddress}
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+
+info:
+  app:
+    name: "gw网关服务"
+    description: "网关系统"
+    version: "@project.version@"
+    spring-boot-version: "@project.parent.version@"

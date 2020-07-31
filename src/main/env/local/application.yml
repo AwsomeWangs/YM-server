@@ -1,0 +1,72 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: lin-jia-publish
+  datasource:
+    name: mydb
+    url: jdbc:mysql://10.126.97.195:3306/linjia?serverTimezone=Asia/Shanghai
+    username: linjia
+    password: linjia.club
+    driverClassName:  com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    minIdle: 1
+    maxActive: 2
+    initialSize: 1
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 3000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'ZTM' FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    removeAbandoned: true
+    removeAbandonedTimeout: 1800
+    logAbandoned: true
+    filters: stat,wall,log4j,logback
+    useGlobalDataSourceStat: true
+#sleuth 日志采集百分比
+  sleuth:
+    sampler:
+      percentage: 1
+  http:
+    multipart:
+      max-file-size: 5Mb
+      max-request-size: 30Mb
+#该参数用来开启重试机制
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: false
+#feign 声明式服务调用配置
+#hystrix服务容错配置
+feign:
+  hystrix:
+    enabled: true
+#断路器线程池超时时间,断路器的超时时间需要大于ribbon的超时时间，不然不会触发重试。 设置hystrix全局超时时间(解决第一次请求失败问题)
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 60000 #缺省为1000
+  threadpool:
+    default:
+      coreSize: 100 #缺省为10
+
+#ribbon 客户端负载均衡器配置客户端调用超时
+ribbion:
+  ConnectTimeout: 30000          #ribbion 请求连接超时时间
+  ReadTimeout: 50000             #请求处理超时时间
+  OkToRetryOnAllOperations: false #对于所有请求都进行重试
+  MaxAutoRetriesNextServer: 1   #对下一个实例重试次数
+  MaxAutoRetries: 1              #当前实例重试次数
+
+#seesion 共享配置
+spring.session.store-type: redis

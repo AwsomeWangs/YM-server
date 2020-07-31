@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.linjia</groupId>
+        <artifactId>lin-jia-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../lin-jia-parent/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>lin-jia-publish</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+
+    <properties>
+        <deploy.mode>local</deploy.mode>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <spring-boot.velocity.version>1.4.7.RELEASE</spring-boot.velocity.version>
+        <za-common-cms.version>1.0.0</za-common-cms.version>
+        <mysql-connector-version>6.0.6</mysql-connector-version>
+        <spring-boot.version>1.5.6.RELEASE</spring-boot.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--spring aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <!--spring boot jpa mybatis数据源-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- 数据库连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector-version}</version>
+        </dependency>
+        <!--Spring cloud 配置-->
+        <!--注册中心-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
+        </dependency>
+        <!--spring cloud 配置中心-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <!--spring cloud feign声明式服务调用，客户端负载均衡器，服务容错-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+        </dependency>
+        <!--swagger API接口文档管理-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>mapstruct-jdk8</artifactId>
+                    <groupId>org.mapstruct</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>mapstruct</artifactId>
+                    <groupId>org.mapstruct</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>mapstruct-processor</artifactId>
+                    <groupId>org.mapstruct</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>mapstruct-jdk8</artifactId>
+                    <groupId>org.mapstruct</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>mapstruct</artifactId>
+                    <groupId>org.mapstruct</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>mapstruct-processor</artifactId>
+                    <groupId>org.mapstruct</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+
+        <!--Apache Commons-->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+
+        <!--阿里插件-->
+        <!--fastjson-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
+        <!--        Error creating bean with name 'encrypt-org.springframework.cloud.bootstrap.encrypt.KeyProperties':-->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
+    </dependencies>
+    <profiles>
+        <profile>
+            <id>local</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <env.resource>src/main/env/local</env.resource>
+            </properties>
+        </profile>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env.resource>src/main/env/dev</env.resource>
+            </properties>
+        </profile>
+    </profiles>
+    <build>
+        <defaultGoal>compile</defaultGoal>
+        <finalName>lin-jia-publish</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.5</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <configuration>
+                    <mainClass>com.linjia.publish.PublishApplication</mainClass>
+                    <jvmArguments>-Dfile.encoding=UTF-8</jvmArguments>
+                    <fork>true</fork>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>${env.resource}</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+</project>
