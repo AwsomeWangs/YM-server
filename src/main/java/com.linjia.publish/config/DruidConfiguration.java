@@ -1,4 +1,4 @@
-package com.linjia.customer.config;
+package com.linjia.publish.config;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;

@@ -9,7 +9,7 @@ spring:
       label: master
       discovery:
         enabled: true                                 # 默认false，设为true表示使用注册中心中的configserver配置而不自己配置configserver的uri
-        serviceId: config-server  # 指定config server在服务发现中的serviceId，默认为：configserver
+        serviceId: lin-jia-config-server  # 指定config server在服务发现中的serviceId，默认为：configserver
       #配置中心安全保护
       username: user
       password: 37cc5635-559b-4e6f-b633-7e932b813f73
@@ -29,7 +29,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-       defaultZone: http://registry.middleware.com/eureka/
+       defaultZone: http://172.17.72.191:1111/eureka/
   instance:
       preferIpAddress: true
       ipAddress: ${spring.cloud.client.ipAddress}
@@ -37,10 +37,9 @@ eureka:
 
 info:
   app:
-    name: "后台管理服务"
-    description: "后台管理系统"
-    version: "@toker.version@"
-    spring-boot-version: "@toker.parent.version@"
+    name: "publish服务"
+    description: "publish服务"
+    version: "@project.version@"
 
 security:
   user:

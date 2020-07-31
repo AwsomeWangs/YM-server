@@ -5,9 +5,9 @@ spring:
     name: lin-jia-publish
   datasource:
     name: mydb
-    url: jdbc:mysql://10.126.97.195:3306/linjia?serverTimezone=Asia/Shanghai
-    username: linjia
-    password: linjia.club
+    url: jdbc:mysql://101.200.151.57:3306/linjia?serverTimezone=Asia/Shanghai
+    username: root
+    password: e6e9dd49a506eb13
     driverClassName:  com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     minIdle: 1
@@ -70,3 +70,23 @@ ribbion:
 
 #seesion 共享配置
 spring.session.store-type: redis
+
+mapper:
+  mappers: tk.mybatis.mapper.common.Mapper
+  not-empty: false
+  identity: MYSQL
+
+---
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:mysql://172.17.72.191:3306/linjia?serverTimezone=Asia/Shanghai
+#注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.17.72.191:1111/eureka/
+  instance:
+    preferIpAddress: true
+    ipAddress: ${spring.cloud.client.ipAddress}
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}

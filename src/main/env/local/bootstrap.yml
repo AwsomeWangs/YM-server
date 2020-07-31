@@ -20,7 +20,6 @@ eureka:
 
 info:
   app:
-    name: "gw网关服务"
-    description: "网关系统"
+    name: "publish服务"
+    description: "publish服务"
     version: "@project.version@"
-    spring-boot-version: "@project.parent.version@"
