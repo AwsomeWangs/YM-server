@@ -1,4 +1,4 @@
-package com.yuming.server.shiro.controller;
+package com.yuming.server.controller;
 
 
 import com.yuming.server.shiro.dto.LoginDTO;
