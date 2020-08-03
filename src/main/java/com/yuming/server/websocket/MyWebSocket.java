@@ -1,5 +1,7 @@
 package com.yuming.server.websocket;
 
+import com.yuming.server.service.RedisService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,41 +21,8 @@ import java.util.concurrent.ConcurrentHashMap;
 @ServerEndpoint(value = "/websocket/{name}")
 @RestController
 public class MyWebSocket {
-
-//    //用来存放每个客户端对应的MyWebSocket对象
-//    private static CopyOnWriteArraySet<MyWebSocket> user = new CopyOnWriteArraySet<MyWebSocket>();
-//
-//    //与某个客户端的连接会话，需要通过它来给客户端发送数据
-//    private Session session;
-//
-//    @OnMessage
-//    public void onMessage(String message,Session session) throws IOException {
-//
-//        //群发消息
-//        for (MyWebSocket myWebSocket : user) {
-//            myWebSocket.session.getBasicRemote().sendText(session.getId()+"说："+message);
-//            //myWebSocket.session.getBasicRemote().sendText("<img src=''/>");
-//        }
-//    }
-//
-//    @OnOpen
-//    public void onOpen(Session session){
-//        System.out.println(session.getId()+" open...");
-//        this.session = session;
-//        user.add(this);
-//    }
-//    @OnClose
-//    public void onClose(){
-//        System.out.println(this.session.getId()+" close...");
-//        user.remove(this);
-//    }
-//
-//    @OnError
-//    public void onError(Session session,Throwable error){
-//        System.out.println(this.session.getId()+" error...");
-//        error.printStackTrace();
-//    }
-
+    @Autowired
+    RedisService redisService;
 
     //存储客户端的连接对象,每个客户端连接都会产生一个连接对象
     private static ConcurrentHashMap<String,MyWebSocket> map=new ConcurrentHashMap();

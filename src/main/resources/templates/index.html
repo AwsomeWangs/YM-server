@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>当前用户xiaoMing</title>
+    <script type="text/javascript" src="http://z1-pcok6.kuaishangkf.com/bs/ks.j?cI=336682&fI=145278" charset="utf-8"></script>
 </head>
 <style>
     #message{
@@ -35,7 +36,7 @@
     var inputEl=document.getElementsByTagName("input")[0];
     var websocket=null;
     if('WebSocket' in window){
-        websocket=new WebSocket("ws:localhost:9090/shiro/websocket/xiaoMing");
+        websocket=new WebSocket("ws:localhost:9090/ym/websocket/xiaoMing");
     }else {
         alert("浏览器不支持");
 
@@ -46,8 +47,8 @@
 
     };
     websocket.onclose=function () {
-        console.log("webscoket连接失败");
-        addMessage("webscoket连接失败");
+        console.log("webscoket连接关闭");
+        addMessage("webscoket连接关闭");
     };
     websocket.onmessage=function (event) {
         addMessage(event.data);
