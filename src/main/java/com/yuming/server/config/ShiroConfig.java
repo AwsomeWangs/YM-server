@@ -56,7 +56,7 @@ public class ShiroConfig {
         filterMap.put("/2", "anon");
         filterMap.put("/websocket/**", "anon");
         // 除了以上路径，其他都需要权限验证
-        filterMap.put("/**", "auth");
+        filterMap.put("/**", "anon");
         shiroFilter.setFilterChainDefinitionMap(filterMap);
 
         return shiroFilter;

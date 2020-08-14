@@ -19,8 +19,8 @@ public class IndexController {
     RedisService redisService;
     @RequestMapping(value = "1")
     public ModelAndView toIndex(){
-        redisService.set("hi","hello");
-        System.out.println(redisService.get("hi"));
+//        redisService.set("hi","hello");
+//        System.out.println(redisService.get("hi"));
         return new ModelAndView("index");
     }
 
