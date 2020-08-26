@@ -1,282 +1,396 @@
 /* 织梦58（dede58.com）做最好的织梦整站模板下载网站 */
 @font-face {
-    font-family: 'iconfont';
-    src: url('../fonts/iconfont.eot');
-    src: url('../fonts/iconfont.eot') format('embedded-opentype'),  url('../fonts/iconfont.woff') format('woff'),  url('../fonts/iconfont.ttf') format('truetype'),  url('../fonts/iconfont.svg#iconfont') format('svg');
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot') format('embedded-opentype'),  url('../fonts/iconfont.woff') format('woff'),  url('../fonts/iconfont.ttf') format('truetype'),  url('../fonts/iconfont.svg#iconfont') format('svg');
 }
 .jiaodian {
-    width: 100%;
-    position: relative;
+	width: 100%;
+	position: relative;
 }
 .main1 {
-    position: absolute;
-    height: 450px;
-    width: 1200px;
-    left: 50%;
-    margin-left: -600px;
+	position: absolute;
+	height: 450px;
+	width: 1200px;
+	left: 50%;
+	margin-left: -600px;
 }
 .banner {
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    position: relative;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
 }
 .banner-slide {
-    width: 100%;
-    height: 450px;
-    background-repeat: no-repeat;
-    background-size: auto 450px;
-    background-position: center;
-    float: left;
-    display: none;
+	width: 100%;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-size: auto 450px;
+	background-position: center;
+	float: left;
+	display: none;
 }
 .slide-active {
-    display: block;
+	display: block;
 }
 .slide1 {
-    background-image: url(../images/bg4.jpg);
+	background-image: url(../images/bg4.jpg);
 }
 .slide2 {
-    background-image: url(../images/bg4.jpg);
+	background-image: url(../images/bg4.jpg);
 }
 .slide3 {
-    background-image: url(../images/bg4.jpg);
+	background-image: url(../images/bg4.jpg);
 }
 .button {
-    position: absolute;
-    transform: rotate(180deg);
-    top: 50%;
-    left: 5%;
-    height: 80px;
-    width: 40px;
-    margin-top: -40px;
-    background: url(../images/arrow.png) center center no-repeat;
+	position: absolute;
+	transform: rotate(180deg);
+	top: 50%;
+	left: 5%;
+	height: 80px;
+	width: 40px;
+	margin-top: -40px;
+	background: url(../images/arrow.png) center center no-repeat;
 }
 .next {
-    transform: rotate(0deg);
-    left: auto;
-    right: 5%;
+	transform: rotate(0deg);
+	left: auto;
+	right: 5%;
 }
 .button:hover {
-    background-color: #333;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
+	background-color: #333;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
 }
 .dots {
-    position: absolute;
-    bottom: 24px;
-    right: 0;
-    text-align: right;
-    padding-right: 24px;
-    line-height: 12px;
+	position: absolute;
+	bottom: 24px;
+	right: 0;
+	text-align: right;
+	padding-right: 24px;
+	line-height: 12px;
 }
 .dots span {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-left: 8px;
-    background-color: rgba(7, 17, 27, 0.4);
-    cursor: pointer;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin-left: 8px;
+	background-color: rgba(7, 17, 27, 0.4);
+	cursor: pointer;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset;
 }
 .dots span.active {
-    box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
-    background-color: #ffffff;
+	box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+	background-color: #ffffff;
 }
 /* menu-box */
 .menu-box {
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 0.7;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 244px;
-    height: 450px;
-    z-index: 1;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0.7;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 244px;
+	height: 450px;
+	z-index: 1;
 }
 .menu-content {
-    position: absolute;
-    left: 0px;
-    top: -42px;
-    width: 244px;
-    z-index: 2;
+	position: absolute;
+	left: 0px;
+	top: -42px;
+	width: 244px;
+	z-index: 2;
 }
 .menu-item {
-    height: 75px;
-    line-height: 75px;
-    font-size: 12px;
-    cursor: pointer;
-    position: relative;
+	height: 75px;
+	line-height: 75px;
+	font-size: 12px;
+	cursor: pointer;
+	position: relative;
 }
 .ico1 {
-    background: url(../images/ico1.png) 20px center no-repeat;
+	background: url(../images/ico1.png) 20px center no-repeat;
 }
 .ico2 {
-    background: url(../images/ico2.png) 20px center no-repeat;
+	background: url(../images/ico2.png) 20px center no-repeat;
 }
 .ico3 {
-    background: url(../images/ico3.png) 20px center no-repeat;
+	background: url(../images/ico3.png) 20px center no-repeat;
 }
 .ico4 {
-    background: url(../images/ico4.png) 20px center no-repeat;
+	background: url(../images/ico4.png) 20px center no-repeat;
 }
 .ico5 {
-    background: url(../images/ico5.png) 20px center no-repeat;
+	background: url(../images/ico5.png) 20px center no-repeat;
 }
 .ico6 {
-    background: url(../images/ico6.png) 20px center no-repeat;
+	background: url(../images/ico6.png) 20px center no-repeat;
 }
 .menu-item a {
-    display: block;
-    color: #fff;
-    padding: 0 8px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 15px;
-    text-align: center;
+	display: block;
+	color: #fff;
+	padding: 0 8px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 15px;
+	text-align: center;
 }
 .menu-item:last-child a {
-    border-bottom: none;
+	border-bottom: none;
 }
 .menu-item i {
-    position: absolute;
-    right: 32px;
-    top: 26px;
-    color: rgba(255,255,255,0.8);
-    font-size: 32px;
-    top: 0px;
-    font-style: normal;
-    font-weight: normal;
-    font-family: "iconfont";
+	position: absolute;
+	right: 32px;
+	top: 26px;
+	color: rgba(255,255,255,0.8);
+	font-size: 32px;
+	top: 0px;
+	font-style: normal;
+	font-weight: normal;
+	font-family: "iconfont";
 }
 .sub-menu {
-    border: 1px solid #d9dde1;
-    background: #fff;
-    position: absolute;
-    left: 244px;
-    top: 0px;
-    width: 860px;
-    height: 100%;
-    z-index: 581;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+	border: 1px solid #d9dde1;
+	background: #fff;
+	position: absolute;
+	left: 244px;
+	top: 0px;
+	width: 860px;
+	height: 100%;
+	z-index: 581;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 .hide {
-    display: none;
+	display: none;
 }
 .menu-title {
-    height: 40px;
-    display: block;
-    width: 100%;
-    background: url(../images/btitle.png) no-repeat #2eac42 25px center;
+	height: 40px;
+	display: block;
+	width: 100%;
+	background: url(../images/btitle.png) no-repeat #2eac42 25px center;
 }
 .menu-title h4 {
-    color: #fff;
-    text-align: center;
-    line-height: 40px;
-    font-weight: normal;
-    font-size: 16px;
-    background: url(../images/bdown.png) no-repeat 200px center;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	font-weight: normal;
+	font-size: 16px;
+	background: url(../images/bdown.png) no-repeat 200px center;
 }
 .inner-box {
-    width: 100%;
-    height: 450px;
-    display: none;
-    overflow: hidden;
-    background: url(../images/nav-pull-img.jpg) no-repeat right 320px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+	width: 100%;
+	height: 450px;
+	display: none;
+	overflow: hidden;
+	background: url(../images/nav-pull-img.jpg) no-repeat right 320px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 }
 .inner-box dl {
-    padding: 10px 0px;
-    margin: 0 20px;
-    border-bottom: solid 1px #eee;
+	padding: 10px 0px;
+	margin: 0 20px;
+	border-bottom: solid 1px #eee;
 }
 .inner-box dl dt {
 }
 .inner-box dl dt a {
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 30px;
-    color: #2eac42
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 30px;
+	color: #2eac42
 }
 .inner-box dl dt a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 .inner-box dl:after {
-    display: block;
-    content: "";
-    clear: both;
+	display: block;
+	content: "";
+	clear: both;
 }
 .inner-box dl dd {
-    float: left;
-    line-height: 28px;
-    padding: 0 18px 0 0;
+	float: left;
+	line-height: 28px;
+	padding: 0 18px 0 0;
 }
 .inner-box dl dd a {
-    font-size: 13px;
-    color: #666;
+	font-size: 13px;
+	color: #666;
 }
 .inner-box dl dd a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 /*表单*/
 .biaodan {
-    position: absolute;
-    right: 50%;
-    z-index: 5;
-    width: 280px;
-    height: 340px;
-    background: rgba(255, 255, 255, 0.7);
-    top: 50%;
-    margin-top: -160px;
-    margin-right: -600px;
+	position: absolute;
+	right: 50%;
+	z-index: 5;
+	width: 280px;
+	height: 340px;
+	background: rgba(255, 255, 255, 0.7);
+	top: 50%;
+	margin-top: -160px;
+	margin-right: -600px;
 }
 .biaodan-title {
 }
 .biaodan-title h5 {
-    font-size: 18px;
-    font-weight: normal;
-    text-align: center;
-    margin: 30px 0 8px 0;
-    background: url(../images/biao3.png) no-repeat center;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	margin: 30px 0 8px 0;
+	background: url(../images/biao3.png) no-repeat center;
 }
 .biaodan-title p {
-    font-size: 14px;
-    color: #666;
-    text-align: center;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
 }
 .biaodan-input {
-    padding: 0 30px;
-    margin: 25px 0;
+	padding: 0 30px;
+	margin: 25px 0;
 }
 .biaodan-ico1 input {
-    background: url(../images/biaodan1.png) no-repeat 10px center #fff;
+	background: url(../images/biaodan1.png) no-repeat 10px center #fff;
 }
 .biaodan-ico2 input {
-    background: url(../images/biaodan2.png) no-repeat 10px center #fff;
+	background: url(../images/biaodan2.png) no-repeat 10px center #fff;
 }
 .biaodan-input input {
-    height: 50px;
-    border: 0px;
-    padding-left: 60px;
-    width: 160px;
-    font-size: 16px;
-    border-radius: 3px;
+	height: 50px;
+	border: 0px;
+	padding-left: 60px;
+	width: 160px;
+	font-size: 16px;
+	border-radius: 3px;
 }
 .biaodan-submit {
-    padding: 0 30px;
+	padding: 0 30px;
 }
 .biaodan-submit input {
-    cursor: pointer;
-    width: 100%;
-    height: 50px;
-    border: 0px;
-    background: #2eac42;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 20px;
-    font-family: "微软雅黑";
+	cursor: pointer;
+	width: 100%;
+	height: 50px;
+	border: 0px;
+	background: #2eac42;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 20px;
+	font-family: "微软雅黑";
 }
 .biaodan-submit input:hover {
-    background: rgba(222,16,3,0.7);
+	background: rgba(222,16,3,0.7);
+}
+#row_39 {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: none;
+    background-color: rgb(43, 46, 48);
+    width: 100%;
+}
+.customModuleRow {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+.customModuleRowAbsolute .customModuleRowInner {
+    padding-left: 0;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    color: #545454;
+}
+.CModulePA {
+    position: relative;
+    height: 330px;
+    zoom: 1;
+    overflow: hidden;
+}
+.CModulePA .customModule {
+    position: absolute;
+    float: none;
+    margin: 0;
+    width: 85px;
+    height: 196px;
+    left: 1056px;
+    top: 115px;
+    z-index: 16;
+}
+.ev-module-edit {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 207px;
+    height: 135px;
+    left: 11px;
+    top: 0px;
+    z-index: 1;
+}
+#Mo_31 .text-list-module-1 .inner {
+    margin-right: 0px;
+    margin-bottom: 9px;
+    border-color: #CCC;
+}
+#Mo_31 .text-list-module-1 a {
+    color: #cccccc;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+#Mo_30 .text-list-module-1 a {
+    color: #cccccc;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+.ev-text-article-4 {
+    font-size: 12px;
+    line-height: 1.3;
+}
+#footer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+    z-index: 1;
+}
+.footerConArea {
+    margin: 0 auto;
+    width: 1200px;
+} 
+#footer .footerCon {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ccc;
+    
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 10px 0;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 0;
+    line-height: 24px;
+}
+.footerCon a {
+    color: #434343;
+    text-decoration: none;
+    cursor: pointer;
+}
+#footer .footerBg {
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: #272727;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1
+}
+.footerNav em {
+    font-style: normal;
+    margin: 0 5px;
 }

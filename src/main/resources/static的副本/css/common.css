@@ -1,6 +1,6 @@
 
 
-/*鍏敤閮ㄥ垎*/
+/*å…¬ç”¨éƒ¨åˆ†*/
 
 body, h1, h2, h3, h4, h5, h6, dl, dt, dd, ul, ol, li, p, form {
 
@@ -16,7 +16,7 @@ body {
 
     font-size: 14px;
 
-    font-family: "寰蒋闆呴粦", "Microsoft YaHei";
+    font-family: "å¾®è½¯é›…é»‘", "Microsoft YaHei";
 
     background: #fff;
 
@@ -46,13 +46,13 @@ img, ul, li, em {
 
 input {
 
-    font-family: "寰蒋闆呴粦", "Microsoft YaHei";
+    font-family: "å¾®è½¯é›…é»‘", "Microsoft YaHei";
 
 }
 
 a:hover {
 
-    color: #0a97ec;
+    color: #2eac42;
 
 }
 
@@ -132,7 +132,7 @@ a:hover {
 
 }
 
-/* 鏍囬 */
+/* æ ‡é¢˜ */
 
 .title {
 
@@ -168,7 +168,7 @@ a:hover {
 
 }
 
-/* 閫氭爮 */
+/* é€šæ  */
 
 .tbanner1 {
 
@@ -186,7 +186,7 @@ a:hover {
 
 }
 
-/* 鍥剧墖鍒楄〃 */
+/* å›¾ç‰‡åˆ—è¡¨ */
 
 .pic4 {
 
@@ -402,9 +402,9 @@ a:hover {
 
 }
 
-/** 鍗曢〉鍐呭 **/
+/** å•é¡µå†…å®¹ **/
 
-/*棣栭〉鏂伴椈*/
+/*é¦–é¡µæ–°é—»*/
 
 .news_list1 {
 
@@ -554,7 +554,7 @@ a:hover {
 
 }
 
-/*浜岀骇椤甸潰*/
+/*äºŒçº§é¡µé¢*/
 
 .weizhi-box {
 
@@ -622,7 +622,7 @@ a:hover {
 
 }
 
-/* 鍐呴〉鍒嗙被 */
+/* å†…é¡µåˆ†ç±» */
 
 .menu-box1, .menu-item1 {
 
@@ -662,7 +662,7 @@ a:hover {
 
 }
 
-/*瀛愭爮鐩�*/
+/*å­æ ç›®*/
 
 .sub_nav {
 
@@ -710,7 +710,7 @@ a:hover {
 
 }
 
-/*鏂囩珷鍒嗕韩*/
+/*æ–‡ç« åˆ†äº«*/
 
 .jiathis_style_24x24 {
 
@@ -782,7 +782,7 @@ a:hover {
 
 }
 
-/*鍥剧墖鏀惧ぇ*/
+/*å›¾ç‰‡æ”¾å¤§*/
 
 .picShow img:hover, .picShow a:hover img {
 
@@ -806,7 +806,7 @@ a:hover {
 
 }
 
-/*鍥炬枃鍒楄〃*/
+/*å›¾æ–‡åˆ—è¡¨*/
 
 .pic_art_list {
 
@@ -960,7 +960,7 @@ a:hover {
 
 }
 
-/*鍙宠竟*/
+/*å³è¾¹*/
 
 .right_title {
 
@@ -996,11 +996,11 @@ a:hover {
 
 }
 
-/*琛ㄥ崟鏍峰紡*/
+/*è¡¨å•æ ·å¼*/
 
 .upfile {
 
-    font-family: "寰蒋闆呴粦";
+    font-family: "å¾®è½¯é›…é»‘";
 
     height: 32px;
 
@@ -1034,7 +1034,7 @@ a:hover {
 
     border: 0;
 
-    font-family: "寰蒋闆呴粦";
+    font-family: "å¾®è½¯é›…é»‘";
 
     margin: 10px auto;
 
@@ -1048,7 +1048,7 @@ a:hover {
 
 }
 
-/* 鍥剧墖 */
+/* å›¾ç‰‡ */
 
 .main_right__img img {
 
@@ -1058,7 +1058,7 @@ a:hover {
 
 }
 
-/*鍐呭椤�*/
+/*å†…å®¹é¡µ*/
 
 .neirong {
 
@@ -1096,7 +1096,7 @@ a:hover {
 
 }
 
-/* 鏂囩珷鏍囬 */
+/* æ–‡ç« æ ‡é¢˜ */
 
 .neirong-title {
 
@@ -1122,7 +1122,7 @@ a:hover {
 
 }
 
-/*闅忔満鏂囩珷鍒楄〃*/
+/*éšæœºæ–‡ç« åˆ—è¡¨*/
 
 .n_list {
 
@@ -1158,7 +1158,7 @@ a:hover {
 
 }
 
-/*闂瓟*/
+/*é—®ç­”*/
 
 .wen {
 
@@ -1230,7 +1230,7 @@ a:hover {
 
 }
 
-/*鍒嗛〉*/
+/*åˆ†é¡µ*/
 
 .mypages {
 
@@ -1280,7 +1280,7 @@ a:hover {
 
 }
 
-/* 宸﹁竟鍒楄〃 */
+/* å·¦è¾¹åˆ—è¡¨ */
 
 .list-box {
 
@@ -1384,7 +1384,7 @@ a:hover {
 
 }
 
-/* 鍐呴〉琛ㄥ崟 */
+/* å†…é¡µè¡¨å• */
 
 .ly_box {
 
@@ -1550,7 +1550,7 @@ a:hover {
 
 .select1 select {
 
-    font-family: "寰蒋闆呴粦", "Microsoft YaHei";
+    font-family: "å¾®è½¯é›…é»‘", "Microsoft YaHei";
 
     width: 183px;
 
@@ -1622,7 +1622,7 @@ a:hover {
 
 }
 
-/* 鍦ㄧ嚎瀹㈡湇 */
+/* åœ¨çº¿å®¢æœ */
 
 .floatBox {
 
@@ -1730,7 +1730,7 @@ a:hover {
 
     _position: absolute;
 
-_top:e-xpression(documentElement.scrollTop+10 + "px");
+    _top:e-xpression(documentElement.scrollTop+10 + "px");
 
     z-index: 100;
 
@@ -1741,3 +1741,4 @@ _top:e-xpression(documentElement.scrollTop+10 + "px");
     top: 150px
 
 }
+
