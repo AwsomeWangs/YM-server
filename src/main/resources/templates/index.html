@@ -7,11 +7,15 @@
     <title>河北万略-专业企业管理咨询</title>
     <meta name="keywords" content="代理记账,公司注册,财税服务,代理记账公司,注册公司,金桔财务"/>
     <meta name="description"
-          content="金桔财务提供代理记账报税一体化的财税服务,代理记账会计和税务师百分百资质认证,专业中小企业提供工商注册公司变更、会计记账、注册公司咨询、工商注册查询等一站式企业服务"/>
+          content="河北万略企业管理有限公司-提供专业的一站式企业服务"/>
     <link href="./css/55.css" rel="stylesheet" type="text/css">
     <link href="./css/common.css" rel="stylesheet" type="text/css"/>
     <link href="./css/style.css" rel="stylesheet" type="text/css"/>
     <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/jz_index.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/jz_header.css" rel="stylesheet" type="text/css"/>
+    <link type="text/css" rel="stylesheet" href="./css/jz_header.css?version=1.0">
+
     <script type="text/javascript" src="http://style4.jjcsweb.com/js/jquery.js"></script>
     <!-- <script type="text/javascript" src="http://style4.jjcsweb.com/js/superslide.2.1.js"></script> -->
     <!-- <script type="text/javascript" src="http://style4.jjcsweb.com/js/float.js"></script> -->
@@ -19,43 +23,172 @@
     <script type="text/javascript" src="https://qfdk61.kuaishang.cn/bs/ks.j?cI=984429&fI=3863" charset="utf-8"></script>
 </head>
 <body>
-<div class="logo">
-    <div class="main">
-        <div class="logo_img fl"><a href="/"><img class="logo_png" src="./img/header.png"></a></div>
-        <div class="logo_by fl">
-        </div>
-        <!-- <div class="logo_tel fr"> <span><i></i><em>咨询热线</em></span> <b>4000-936-926</b> </div> -->
-        <div class="clear"></div>
-        <div class="nav">
-            <ul class="fl">
-                <li><a href="/">
-                    <img src="http://aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1009/2016103_1515375479.png?x-oss-process=image/resize,m_fixed,w_76,h_60,limit_0"/>
-                    <p>工商注册</p>
-                </a></li>
-                <li><a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();">
-                    <img src="http://aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1009/2016015_1515375236.png?x-oss-process=image/resize,m_fixed,w_88,h_63,limit_0"/>
-                    <p>代理记账</p></a></li>
-                <li><a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();">
-                    <img src="http://aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1009/2016129_1515375594.png?x-oss-process=image/resize,m_fixed,w_89,h_63,limit_0"/>
-                    <p>纳税筹划</p></a></li>
-                <li><a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();">
-                    <img src="http://aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1009/2016140_1515375653.png?x-oss-process=image/resize,m_fixed,w_80,h_63,limit_0"/>
-                    <p>社保咨询</p></a></li>
-                <li><a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();">
-                    <img src="http://aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1009/2016150_1515375696.png?x-oss-process=image/resize,m_fixed,w_69,h_62,limit_0"/>
-                    <p>融资筹划</p></a></li>
-            </ul>
-            <div class="clear"></div>
 
-        </div>
 
+<div class="jz-header-new clearfix">
+    <div class="jz-header-box w1240 clearfix">
+        <div class="jz-header-logo fl">
+            <a href="/"><img class="logo_png" src="./img/header.png" alt="万略企业管理"></a>
+        </div>
+        <ul class="jz-header-nav-new fr clearfix">
+            <li class="item jznav1 fl"><a data-setpoint="100" data-setpname="首页" href="/">首页</a><i></i></li>
+            <li class="item jznav2 fl"><a data-setpoint="101" data-setpname="工商注册" href="javascript:void(0);" onclick="openZoosUrl();">公司注册</a><i></i><span></span></li>
+            <li class="item jznav3 fl"><a data-setpoint="102" data-setpname="代理记账" href="javascript:void(0);" onclick="openZoosUrl();">代理记账</a><i></i><span></span></li>
+            <li class="item jznav4 fl"><a href="javascript:void(0);" onclick="openZoosUrl();">纳税筹划</a><i></i></li>
+            <li class="item jznav5 fl"><a href="javascript:void(0);" onclick="openZoosUrl();">社保咨询</a><i></i></li>
+            <li class="item jznav6 fl"><a data-setpoint="105" data-setpname="审计服务" href="javascript:void(0);" onclick="openZoosUrl();">融资筹划</a><i></i></li>
+            <li class="item jznav8 fl"><a data-setpoint="107" data-setpname="关于我们" href="javascript:void(0);" onclick="openZoosUrl();">关于我们</a><i></i></li>
+            <li class="item phone fl">400-017-2000</li>
+        </ul>
     </div>
-
 </div>
-<img class="fullSlide"
-     src="http://aimg8.dlszyht.net.cn/ev_user_module_content_tmp/2018_01_05/tmp1515139748_1615724_s.jpg"/>
+<div class="jz-head-zhanwei"></div>
+<script>
+    var com_title_flag = false;
+    $('.jz-header-new .jz-navbox span').on('click',function () {
+        if (!com_title_flag) {
+            $('.jz-header-new .maskbox').slideDown('fast');
+            $('.jz-header-new .jz-navbox').addClass('selnavbox');
+        } else {
+            $('.jz-header-new .maskbox').slideUp('fast');
+            $('.jz-header-new .jz-navbox').removeClass('selnavbox');
+        }
+        com_title_flag = !com_title_flag;
+    });
+</script>
+
+<!--弹出表单时遮罩层开始-->
+<div id="cover"></div>
+<!--弹出表单时遮罩层结束-->
+</div>
+<script type="text/javascript">
+    $(function() {
+        $(".dropdown-wrap").animate({
+            opacity: 1,
+        }, 100);
+        $(".dropdown-line").animate({
+            height: "40px",
+        }, 2000);
+        $(".dropdown-window-close-btn").click(function(){
+            if($(this).offset().top == 74) {
+                $(".dropdown-line").animate({
+                    height: "20px",
+                }, 1000, function(){
+                    $(".dropdown-window-small").css({"display": "block"});
+                    $(".dropdown-window").css({"display": "none"});
+                });
+            }
+        });
+        $(".dropdown-window-small").click(function(){
+            $(".dropdown-window").css({"display": "block"});
+            $(this).css({"display": "none"});
+            $(".dropdown-line").animate({
+                height: "40px",
+            }, 1000);
+        });
+        $('a[data-setpoint],li[data-setpoint]').on('click',function () {
+            var sid = $(this).attr('data-setpoint');
+            var sname = $(this).attr('data-setpname');
+            $.ajax({
+                url : "/menu/saveClickRecord.jspx",
+                type : "POST",
+                dataType: 'json',
+                data : {
+                    id: sid,
+                    name: sname
+                },
+                success : function(result) {
+                    if (result.err == 0) {
+                        console.log('setpoint-success');
+                    } else {
+                        console.log('setpoint-fail');
+                    }
+                },
+                error : function() {
+                    console.log('setpoint-error');
+                }
+            })
+        });
+    });
+    $(".jz-header-nav li a").mouseover(function (){
+        $(this).next().css({"background":"#28a7e1"});
+    }).mouseout(function (){
+        $(this).next().css({"background":"#fff"});
+    });
+</script>
+
+<!--banner-->
+<div class="jz-problem">
+    <div class="jz-problem-con w1240">
+        <div class="jz-problem-title">
+            <p class="p1">您的公司是否遇到以下问题</p>
+            <p class="p2">专业的事交给专业的人来做</p>
+            <p class="p2">万略让问题迎刃而解</p>
+            <div><a href="javascript:void(0);" onclick="openZoosUrl();">立即帮我解决></a></div>
+        </div>
+        <div class="problem-list1 problem-list fl">
+            <div class="prob-top clearfix">
+                <img class="pt1 fl" src="./img/jz-prob1.png">
+                <img class="ptc1 fl" src="./img/jz-probc1.png" style="display:none;">
+                <p class="fl">流程繁琐</p>
+            </div>
+            <div class="prb-line"></div>
+            <div class="prob-bottom">
+                <p>注册公司流程繁琐、材料多、</p>
+                <p>手续多，很麻烦</p>
+            </div>
+        </div>
+        <div class="problem-list2 problem-list fl">
+            <div class="prob-top clearfix">
+                <img class="pt2 fl" src="./img/jz-prob2.png">
+                <img class="ptc2 fl" src="./img/jz-probc2.png" style="display:none;">
+                <p class="fl">账目杂乱</p>
+            </div>
+            <div class="prb-line"></div>
+            <div class="prob-bottom">
+                <p>公司账目混乱、利润情况不清</p>
+                <p>晰，财务状况不明朗</p>
+            </div>
+        </div>
+        <div class="problem-list3 problem-list fl">
+            <div class="prob-top clearfix">
+                <img class="pt3 fl" src="./img/jz-prob3.png">
+                <img class="ptc3 fl" src="./img/jz-probc3.png" style="display:none;">
+                <p class="fl">成本过高</p>
+            </div>
+            <div class="prb-line"></div>
+            <div class="prob-bottom">
+                <p>聘请专业的会计团队，每年的</p>
+                <p>费用至少需要20万</p>
+            </div>
+        </div>
+        <div class="problem-list4 problem-list fl">
+            <div class="prob-top clearfix">
+                <img class="pt4 fl" src="./img/jz-prob4.png">
+                <img class="ptc4 fl" src="./img/jz-probc4.png" style="display:none;">
+                <p class="fl">不专业</p>
+            </div>
+            <div class="prb-line"></div>
+            <div class="prob-bottom">
+                <p>一般会计人员不具备财务规划</p>
+                <p>经验，引发大量隐患</p>
+            </div>
+        </div>
+        <div class="problem-list5 problem-list fl">
+            <div class="prob-top clearfix">
+                <img class="pt5 fl" src="./img/jz-prob5.png">
+                <img class="ptc5 fl" src="./img/jz-probc5.png" style="display:none;">
+                <p class="fl">效率低</p>
+            </div>
+            <div class="prb-line"></div>
+            <div class="prob-bottom">
+                <p>处理复杂账目时，效率低、准</p>
+                <p>确率底，缺乏合理化管理</p>
+            </div>
+        </div>
+    </div>
+</div>
 <!--注册公司-->
-<!--title-->
 <div class="zcgs_bg">
     <h1 class="title_h1">工商注册</h1>
     <p class="title_p">全程专业代理，<span>顺利领取营业执照</span></p>
@@ -113,7 +246,7 @@
                     <div class="right001" style="margin-left: 0">
                         <img src="http://style4.jjcsweb.com/img/free01.png">
                         <P>内资公司注册</P>
-                        <h1>¥0元注册</h1>
+                        <h1>查看报价</h1>
                     </div>
                     <div class="right001">
                         <img src="http://style4.jjcsweb.com/img/free02.png">
@@ -151,8 +284,7 @@
     <div class="clear"></div>
 </div>
 
-
-<!--银行开户-->
+<!-- 注册问题咨询 -->
 <div class="mian_yhkh">
     <div class="yhkh_box">
         <div class="yhkh_title">
@@ -169,7 +301,7 @@
             <div class="yhkh_01">
                 <img src="http://style4.jjcsweb.com/img/step01.png" class="yhkh_img01">
                 <h1>看规模</h1>
-                <P>可选择不同银行开户，我<br>司享有各大银行VIP合作<br>企业专属绿色通道，可优<br>先办理<br><br>营业执照办理后凭公司信<br>息及法定代表人信息进行<br>银行开户预约</P>
+                <P>公司规模较大，年收入超<br>500万，建议认定一般纳税人<br>月销售额10万以下<br>建议小规模纳税人<br><br>从2019年1月1日起<br>将享受增值税免征政策<br></P>
                 <img src="http://style4.jjcsweb.com/img/bank.png" class="yhkh_img02">
                 <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
             </div>
@@ -177,7 +309,7 @@
 					 yhkh_02">
                 <img src="http://style4.jjcsweb.com/img/step02.png" class="yhkh_img01">
                 <h1>看买方</h1>
-                <P>按照预约时间前往银行办<br>理,法定代表人须到场,同<br>时须接受银行上门核验公<br>司场地<br><br>法人须携带营业执照、公<br>章、场地租赁合同前往银<br>行窗口开户</P>
+                <P>如果你的买方预计为大客户<br>他们很可能不愿接受3%的<br>增值税专用发票<br>如果这种情况，建议选择<br>一般纳税人<br><br><br><br></P>
                 <img src="http://style4.jjcsweb.com/img/company.png" class="yhkh_img02">
                 <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
             </div>
@@ -185,49 +317,147 @@
 						 yhkh_01">
                 <img src="http://style4.jjcsweb.com/img/step03.png" class="yhkh_img01">
                 <h1>看抵扣</h1>
-                <P>办理后2-3周内银行账户<br>可开通，开通后将第一时<br>间通知到位<br><br>对公账户开通,可进行出入<br>帐,同时签订银税协议,进<br>行税款自动扣除</P>
+                <P>如果你公司的成本费用占<br>增值税发票较高比例，<br>进项税额抵扣充分，预测<br>增值税税负低于3%<br>建议认定一般纳税人<br>否则选择小规模纳税人<br></P>
                 <img src="http://style4.jjcsweb.com/img/money.png" class="yhkh_img02" style="margin-top: 20px;">
                 <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
             </div>
             <div class="yhkh_01">
                 <img src="http://style4.jjcsweb.com/img/step01.png" class="yhkh_img01">
                 <h1>看行业</h1>
-                <P>可选择不同银行开户，我<br>司享有各大银行VIP合作<br>企业专属绿色通道，可优<br>先办理<br><br>营业执照办理后凭公司信<br>息及法定代表人信息进行<br>银行开户预约</P>
+                <P>如果是13%税率的行业<br>且为轻资产行业<br>一般增值税税负较高<br>建议选择小规模纳税人<br><br><br><br><br></P>
                 <img src="http://style4.jjcsweb.com/img/bank.png" class="yhkh_img02">
                 <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
             </div>
             <div class="yhkh_01">
                 <img src="http://style4.jjcsweb.com/img/step01.png" class="yhkh_img01">
                 <h1>看优惠</h1>
-                <P>可选择不同银行开户，我<br>司享有各大银行VIP合作<br>企业专属绿色通道，可优<br>先办理<br><br>营业执照办理后凭公司信<br>息及法定代表人信息进行<br>银行开户预约</P>
+                <P>根据你所在行业是否符合<br>增值税优惠政策，比如<br>软件企业增值税超税负返还<br>等优惠政策<br><br>如符合建议选择一般纳税人<br><br><br></P>
+                <img src="http://style4.jjcsweb.com/img/bank.png" class="yhkh_img02">
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!-- 社保咨询 -->
+<div class="zcgs_bg">
+    <h1 class="title_h1">社保咨询</h1>
+    <p class="title_p">代办社保公积金缴费，<span>顺利领取营业执照</span></p>
+    <button class="title_button">4000-936-926</button>
+    <div class="title_line"></div>
+</div>
+<!-- 社保咨询详情 -->
+<div class="mian_yhkh">
+    <div class="yhkh_box">
+        <div class="yhkh_title">
+            <p>注册公司</p>
+            <p class="yhkh-big">小规模纳税人</p>
+            <P>or </P>
+            <p class="yhkh-big">一般纳税人</p>
+            <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();">
+                <div class=" peoblem_title_button">4000-936-926
+                </div>
+            </a>
+        </div>
+        <div class="yhkh_content">
+            <div class="yhkh_01">
+                <img src="http://style4.jjcsweb.com/img/step01.png" class="yhkh_img01">
+                <h1>看规模</h1>
+                <P>公司规模较大，年收入超<br>500万，建议认定一般纳税人<br>月销售额10万以下<br>建议小规模纳税人<br><br>从2019年1月1日起<br>将享受增值税免征政策<br></P>
                 <img src="http://style4.jjcsweb.com/img/bank.png" class="yhkh_img02">
                 <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
             </div>
             <div class="
-							 clear">
+					 yhkh_02">
+                <img src="http://style4.jjcsweb.com/img/step02.png" class="yhkh_img01">
+                <h1>看买方</h1>
+                <P>如果你的买方预计为大客户<br>他们很可能不愿接受3%的<br>增值税专用发票<br>如果这种情况，建议选择<br>一般纳税人<br><br><br><br></P>
+                <img src="http://style4.jjcsweb.com/img/company.png" class="yhkh_img02">
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
+            </div>
+            <div class="
+						 yhkh_01">
+                <img src="http://style4.jjcsweb.com/img/step03.png" class="yhkh_img01">
+                <h1>看抵扣</h1>
+                <P>如果你公司的成本费用占<br>增值税发票较高比例，<br>进项税额抵扣充分，预测<br>增值税税负低于3%<br>建议认定一般纳税人<br>否则选择小规模纳税人<br></P>
+                <img src="http://style4.jjcsweb.com/img/money.png" class="yhkh_img02" style="margin-top: 20px;">
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
+            </div>
+            <div class="yhkh_01">
+                <img src="http://style4.jjcsweb.com/img/step01.png" class="yhkh_img01">
+                <h1>看行业</h1>
+                <P>如果是13%税率的行业<br>且为轻资产行业<br>一般增值税税负较高<br>建议选择小规模纳税人<br><br><br><br><br></P>
+                <img src="http://style4.jjcsweb.com/img/bank.png" class="yhkh_img02">
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
+            </div>
+            <div class="yhkh_01">
+                <img src="http://style4.jjcsweb.com/img/step01.png" class="yhkh_img01">
+                <h1>看优惠</h1>
+                <P>根据你所在行业是否符合<br>增值税优惠政策，比如<br>软件企业增值税超税负返还<br>等优惠政策<br><br>如符合建议选择一般纳税人<br><br><br></P>
+                <img src="http://style4.jjcsweb.com/img/bank.png" class="yhkh_img02">
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
+            </div>
+            <div class="clear">
             </div>
         </div>
         <div class="clear"></div>
-        <div class="small_question_box">
-            <div class="small_question1">
-                <img src="http://style4.jjcsweb.com/img/small_question_icon.png">
-                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><P>公司没有实际场地可以办理对公账户吗？</P></a>
-                <div class="
-					 clear"></div>
-            </div>
-            <div class="small_question2">
-                <img src="http://style4.jjcsweb.com/img/small_question_icon.png">
-                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><P>办理对公账户对存款有要求吗？</P></a>
-                <div class="
-				 clear"></div>
-            </div>
-            <div class="clear"></div>
-        </div>
     </div>
 </div>
 
-<!---->
-<!--title-->
+<!-- 代理记账 -->
+<div class="zcgs_bg">
+    <h1 class="title_h1">代理记账</h1>
+    <p class="title_p">代理记账选万略，<span>高效安全</span></p>
+    <button class="title_button">4000-936-926</button>
+    <div class="title_line"></div>
+</div>
+
+<!-- 代理记账详情 -->
+<div class="mian_yhkh">
+    <div class="yhkh_box">
+        <div class="yhkh_title">
+            <p class="yhkh-big">全方位财税服务</p>
+            <P></P>
+            <p class="yhkh-big">客户一切财务问题</p>
+            <p class="yhkh-big">提供及时专业的处理</p>
+            <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();">
+                <div class=" peoblem_title_button">4000-936-926
+                </div>
+            </a>
+        </div>
+        <div class="yhkh_content">
+            <div class="yhkh_01">
+                <img src="http://style4.jjcsweb.com/img/step01.png" class="yhkh_img01">
+                <h1>服务内容</h1>
+                <P>建立账册<br>整理客户票据<br>编制记账凭据<br>编制财务报票<br>打印凭证<br>整理粘贴凭证<br>日常基本财务、税务咨询<br>财税风险预警<br></P>
+                <img src="http://style4.jjcsweb.com/img/bank.png" class="yhkh_img02">
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
+            </div>
+            <div class="yhkh_02">
+                <img src="http://style4.jjcsweb.com/img/step02.png" class="yhkh_img01">
+                <h1>服务流程</h1>
+                <P>客户收集整理票据<br>上月28号前<br>寄给会计<br>每月3号前<br>会计做账记账<br>每月14号前<br>与客户核对税额<br>代为纳税申报</P>
+                <img src="http://style4.jjcsweb.com/img/company.png" class="yhkh_img02">
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
+            </div>
+            <div class="yhkh_01">
+                <img src="http://style4.jjcsweb.com/img/step03.png" class="yhkh_img01">
+                <h1>热门问答</h1>
+                <P>如果你公司的成本费用占<br>增值税发票较高比例，<br>进项税额抵扣充分，预测<br>增值税税负低于3%<br>建议认定一般纳税人<br>否则选择小规模纳税人<br></P>
+                <img src="http://style4.jjcsweb.com/img/money.png" class="yhkh_img02" style="margin-top: 20px;">
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2>了解更多>></h2></a>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<!-- 纳税申报 -->
 <div class="nssb_bg">
     <h1 class="title_h1">纳税申报</h1>
     <p class="title_p">《税法》规定，企业须根据实际经营情况按期进行纳税申报，否则<span>列入异常名单</span></p>
@@ -248,9 +478,9 @@
         </div>
         <div class="nssb01" style="margin-left: 70px;">
             <div class="nssb_content1">
-                <h1>税务报道</h1>
-                <P>领取营业执照、刻好公章后，由公司财务人员前往国税局、地税局登记公司信息，备案公司财务人员及对公银行账户信息等</P>
-                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2 style=" margin-top: 75px;">
+                <h1>服务内容</h1>
+                <P>增指税申报<br>附加税申报<br>房产税申报<br>土地使用税申报<br>企业所得税申报<br>印花税申报<br>企业所得汇算清缴<br>...</P>
+                <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2 style=" margin-top: 5px;">
                     详情咨询>></h2></a>
             </div>
             <img src="http://style4.jjcsweb.com/img/nssb_02.png" class="nssb_img">
@@ -268,8 +498,8 @@
         </div>
         <div class="nssb01" style="margin-left: 70px;">
             <div class="nssb_content1">
-                <h1>税务服务</h1>
-                <P>轻松代账：新公司成立，不想请专职会计<br>节约成本：公司小本经营尽量控制成本<br>清晰账务：消除公司糊涂账，提前杜绝隐患<br>更好发展：公司成立后想利用好国家的财税政策，帮助企业发展</P>
+                <h1>服务宗旨</h1>
+                <P>我们提供的每一项服务<br>实实在在收费<br>真真切切服务好每一位客户<br>是我们不变的初心<br>专业的事情交给专业的人来做<br>真正省心，省事，省力，省钱</P>
                 <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2 style=" margin-top: 12px;">
                     详情咨询>></h2></a>
             </div>
@@ -422,7 +652,7 @@
     <div class="customModuleRowInner">
         <div class="CModulePA" style="height:330px;">
             <div id="evMo_cLQo1v" class="ev-module-edit"
-                 style="width:207px; height:135px; left:11px; top:0px; z-index:1;">
+                 style="width:207px; height:135px; left:480px; top:0px; z-index:1;">
                 <div class="ev-module-edit-box " id="Mo_cLQo1v">
                     <a href="###">
                         <div class="ev-pic ev-pic-1 ">
@@ -435,7 +665,7 @@
                 </div>
             </div>
             <div id="evMo_wXNuq6" class="ev-module-edit"
-                 style="width:19px; height:20px; left:0px; top:137px; z-index:2;">
+                 style="width:19px; height:20px; left:450px; top:137px; z-index:2;">
                 <div class="ev-module-edit-box " id="Mo_wXNuq6">
                     <a href="###">
                         <div class="ev-pic ev-pic-1 ">
@@ -448,7 +678,7 @@
                 </div>
             </div>
             <div id="evMo_Kl1Rsc" class="ev-module-edit"
-                 style="width:18px; height:13px; left:1px; top:190px; z-index:3;">
+                 style="width:18px; height:13px; left:450px; top:190px; z-index:3;">
                 <div class="ev-module-edit-box " id="Mo_Kl1Rsc">
                     <a href="###">
                         <div class="ev-pic ev-pic-1 ">
@@ -461,7 +691,7 @@
                 </div>
             </div>
             <div id="evMo_0w7zXF" class="ev-module-edit"
-                 style="width:16px; height:23px; left:3px; top:235px; z-index:4;">
+                 style="width:16px; height:23px; left:450px; top:235px; z-index:4;">
                 <div class="ev-module-edit-box " id="Mo_0w7zXF">
                     <a href="###">
                         <div class="ev-pic ev-pic-1 ">
@@ -474,7 +704,7 @@
                 </div>
             </div>
             <div id="evMo_i4bpNG" class="ev-module-edit"
-                 style="width:351px; height:36px; left:36px; top:139px; z-index:5;">
+                 style="width:351px; height:36px; left:486px; top:137px; z-index:5;">
                 <div class="ev-module-text ev-module-edit-box" id="Mo_i4bpNG">
                     <p class="ev-text-article-4"><span style="font-size:14px;color:#CCCCCC;">电话：</span><span
                             style="color: rgb(204, 204, 204);">15831679251</span><span
@@ -482,7 +712,7 @@
                 </div>
             </div>
             <div id="evMo_jhYQZ" class="ev-module-edit"
-                 style="width:351px; height:45px; left:36px; top:191px; z-index:6;">
+                 style="width:351px; height:45px; left:486px; top:191px; z-index:6;">
                 <div class="ev-module-text ev-module-edit-box" id="Mo_jhYQZ">
                     <p class="ev-text-article-4"><span style="font-size:14px;color:#CCCCCC;">邮箱：283946491@qq.com</span>
                     </p>
@@ -490,7 +720,7 @@
                 </div>
             </div>
             <div id="evMo_JSb9iO" class="ev-module-edit"
-                 style="width:351px; height:78px; left:36px; top:234px; z-index:7;">
+                 style="width:351px; height:78px; left:486px; top:234px; z-index:7;">
                 <div class="ev-module-text ev-module-edit-box" id="Mo_JSb9iO">
                     <p class="ev-text-article-4"><span style="font-size:14px;color:#CCCCCC;">地址：</span><span
                             style="color:#CCCCCC;">廊坊市广阳区</span><span style="color:#CCCCCC;">——河北省廊坊市广阳区新源道</span><span
