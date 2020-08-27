@@ -95,7 +95,7 @@
   display: block;
   width: 20px;
   height: 12px;
-  background: url(./img/jz_hot.png) no-repeat 0px 0px;
+  background: url("https://cdn.wlsonsult.com/img/jz_hot.png") no-repeat 0px 0px;
   position: absolute;
   top: 18px;
   right: -20px;
@@ -109,7 +109,7 @@
 	display: block;
 	width: 14px;
 	height: 18px;
-	background: url(./img/jz_tel.png) no-repeat;
+	background: urlhttps://cdn.wlsonsult.com/img/jz_tel.png) no-repeat;
 	position: absolute;
 	left: -24px;
 	top: 36px;
@@ -146,7 +146,7 @@
   top: -6px;
   width: 323px;
   height: 266px;
-  background: url("./img/dropdown_window_bg.png");
+  background: url("https://cdn.wlsonsult.com/img/dropdown_window_bg.png");
 }
 .dropdown-window-close-btn {
   position: absolute;
@@ -172,7 +172,7 @@
   width: 142px;
   height: 66px;
   margin: 0 auto;
-  background: url("./img/dropdown_window_small_bg.png");
+  background: url("https://cdn.wlsonsult.com/img/dropdown_window_small_bg.png");
   cursor: pointer;
 }
 /* 下拉弹窗动画结束 */
@@ -253,7 +253,7 @@
   display: block;
   width: 20px;
   height: 12px;
-  background: url(./img/jz_hot.png) no-repeat 0px 0px;
+  background: url("https://cdn.wlsonsult.com/img/jz_hot.png") no-repeat 0px 0px;
   position: absolute;
   top: 18px;
   right: -20px;
