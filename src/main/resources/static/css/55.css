@@ -824,9 +824,8 @@ input button{ border:none; outline:none;}
 	margin:auto; 
 	width:auto; 
 	height:auto;
-	background-image: url(../img/yhkh_bg.png);
+	background-image: url(../img/yhkh_bg1.png);
 	background-repeat: no-repeat;
-	margin-top: 70px;
 	background-size: auto;
 }
 .yhkh_box{
@@ -851,7 +850,7 @@ input button{ border:none; outline:none;}
 	letter-spacing: 7px;
 }
 .yhkh_title p{
-	color: #fff;
+	color: #07336c;
 	font-size: 18px;
 	margin-top: 10px;
 	letter-spacing: 3px;
