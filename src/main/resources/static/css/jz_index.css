@@ -1239,10 +1239,10 @@
 	margin-right: 0;
 }
 /*partner部分样式结束*/
-div.jz-header-new .jz-header-box .jz-header-nav-new .jznav1 a {
+div.jz-header-new .jz-header-box .jz-header-nav-new .selected a {
 	color: #56a4da;
 }
-div.jz-header-new .jz-header-box .jz-header-nav-new .jznav1 i {
+div.jz-header-new .jz-header-box .jz-header-nav-new .selected i {
 	display: block;
 	position: absolute;
 	bottom: -2px;
