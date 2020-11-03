@@ -277,6 +277,11 @@ input button{ border:none; outline:none;}
 	display: block;
 	margin-top: 5px;
 }
+
+.title_button:hover{
+	color: #62b5e3;
+}
+
 .title_line{
 	width: 80px;
 	height: 4px;
@@ -293,6 +298,9 @@ input button{ border:none; outline:none;}
 	background-size: 100%;
 	padding-top: 45px;
 }
+
+
+
 .zucg_content{
 	width: 1080px;
 	margin: 0 auto;
@@ -1035,6 +1043,10 @@ input button{ border:none; outline:none;}
 	width: 504px;
 	margin-top: 36px;
 }
+.gszc01{
+	width: 1000px;
+	margin-top: 36px;
+}
 .nssb_content1{
 	width: 310px;
 	height:277px;
@@ -1074,6 +1086,41 @@ input button{ border:none; outline:none;}
 	height: 290px;
 }
 
+.gszc_content1{
+	width: 806px;
+	height: 287px;
+	float: left;
+	margin-right: 0;
+	background-color: rgb(252 253 255);
+	box-shadow: 0px 3px 11.68px 4.32px rgb(24 129 204 / 80%);
+	margin-top: 15px;
+}
+.gszc_content1 h1{
+	color: #3d3f47;
+	font-size: 27.8px;
+	margin-left: 60px;
+	margin-top: 24px;
+}
+.gszc_content1 p{
+	font-size: 20px;
+	margin-left: 60px;
+	line-height: 21px;
+	color: #868686;
+	margin-top: 30px;
+	width: 600px;
+}
+.gszc_content1 h2{
+	color: #e8932e;
+	font-size: 19.4px;
+	font-weight: normal;
+	margin-left: 645px;
+	margin-top: 67px;
+	margin-bottom: 35px;
+}
+.gszc_content1 img{
+	margin-left: 15px;
+	margin-top: 25px;
+}
 /**/
 .small_question_box{
 	width: 1080px;

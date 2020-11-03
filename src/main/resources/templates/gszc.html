@@ -8,7 +8,7 @@
     <meta name="keywords" content="工商注册,廊坊工商注册,河北工商注册,万略,企业管理,河北,廊坊,代理记账,公司注册,财税服务,代理记账公司,注册公司,万略企业管理咨询"/>
     <meta name="description"
           content="河北万略企业管理有限公司-提供专业的一站式企业服务"/>
-    <meta name="baidu-site-verification" content="code-GMJJsYi2oV" />
+    <meta name="baidu-site-verification" content="code-GMJJsYi2oV"/>
     <link href="./css/55.css" rel="stylesheet" type="text/css">
     <link href="./css/common.css" rel="stylesheet" type="text/css"/>
     <link href="./css/style.css" rel="stylesheet" type="text/css"/>
@@ -18,12 +18,7 @@
     <link type="text/css" rel="stylesheet" href="./css/jz_header.css?version=1.0">
     <link type="text/css" rel="stylesheet" href="./css/jz_account2.css?version=1.0">
     <link type="text/css" rel="stylesheet" href="./css/reset.css?version=1.0">
-    <link type="text/css" rel="stylesheet" href="http://www.yumingkuaiji.com/css/VNew/web_frame.min.css?1026" />
-    <link type="text/css" rel="stylesheet" href="../static/css/inner_frame.min.css?1026" />
-
-    <link type="text/css" rel="stylesheet" href="http://www.yumingkuaiji.com/templates/others30/css/webskin.css?1026" id="webSkinCss"/>
     <link type="text/css" rel="stylesheet" href="http://www.yumingkuaiji.com/css/VNew/web_style/base_module_style.min.css?1026" />
-
 
     <script type="text/javascript" src="http://style4.jjcsweb.com/js/jquery.js"></script>
     <!-- <script type="text/javascript" src="http://style4.jjcsweb.com/js/superslide.2.1.js"></script> -->
@@ -41,8 +36,10 @@
         </div>
         <ul class="jz-header-nav-new fr clearfix">
             <li class="item jznav1 fl"><a data-setpoint="100" data-setpname="首页" href="/">首页</a><i></i></li>
-            <li class="item selected fl"><a data-setpoint="101" data-setpname="工商注册" href="gszc">公司注册</a><i></i><span></span></li>
-            <li class="item jznav3 fl"><a data-setpoint="102" data-setpname="代理记账" href="dljz">代理记账</a><i></i><span></span></li>
+            <li class="item selected fl"><a data-setpoint="101" data-setpname="工商注册"
+                                            href="gszc">工商注册</a><i></i><span></span></li>
+            <li class="item jznav3 fl"><a data-setpoint="102" data-setpname="代理记账"
+                                          href="dljz">代理记账</a><i></i><span></span></li>
             <li class="item jznav4 fl"><a href="nsch">纳税筹划</a><i></i></li>
             <li class="item jznav5 fl"><a href="sbzx">社保咨询</a><i></i></li>
             <li class="item jznav6 fl"><a data-setpoint="105" data-setpname="审计服务" href="rzch">融资筹划</a><i></i></li>
@@ -54,7 +51,7 @@
 <div class="jz-head-zhanwei"></div>
 <script>
     var com_title_flag = false;
-    $('.jz-header-new .jz-navbox span').on('click',function () {
+    $('.jz-header-new .jz-navbox span').on('click', function () {
         if (!com_title_flag) {
             $('.jz-header-new .maskbox').slideDown('fast');
             $('.jz-header-new .jz-navbox').addClass('selnavbox');
@@ -71,596 +68,135 @@
 <!--弹出表单时遮罩层结束-->
 </div>
 <script type="text/javascript">
-    $(function() {
+    $(function () {
         $(".dropdown-wrap").animate({
             opacity: 1,
         }, 100);
         $(".dropdown-line").animate({
             height: "40px",
         }, 2000);
-        $(".dropdown-window-close-btn").click(function(){
-            if($(this).offset().top == 74) {
+        $(".dropdown-window-close-btn").click(function () {
+            if ($(this).offset().top == 74) {
                 $(".dropdown-line").animate({
                     height: "20px",
-                }, 1000, function(){
+                }, 1000, function () {
                     $(".dropdown-window-small").css({"display": "block"});
                     $(".dropdown-window").css({"display": "none"});
                 });
             }
         });
-        $(".dropdown-window-small").click(function(){
+        $(".dropdown-window-small").click(function () {
             $(".dropdown-window").css({"display": "block"});
             $(this).css({"display": "none"});
             $(".dropdown-line").animate({
                 height: "40px",
             }, 1000);
         });
-        $('a[data-setpoint],li[data-setpoint]').on('click',function () {
+        $('a[data-setpoint],li[data-setpoint]').on('click', function () {
             var sid = $(this).attr('data-setpoint');
             var sname = $(this).attr('data-setpname');
             $.ajax({
-                url : "/menu/saveClickRecord.jspx",
-                type : "POST",
+                url: "/menu/saveClickRecord.jspx",
+                type: "POST",
                 dataType: 'json',
-                data : {
+                data: {
                     id: sid,
                     name: sname
                 },
-                success : function(result) {
+                success: function (result) {
                     if (result.err == 0) {
                         console.log('setpoint-success');
                     } else {
                         console.log('setpoint-fail');
                     }
                 },
-                error : function() {
+                error: function () {
                     console.log('setpoint-error');
                 }
             })
         });
     });
-    $(".jz-header-nav li a").mouseover(function (){
-        $(this).next().css({"background":"#28a7e1"});
-    }).mouseout(function (){
-        $(this).next().css({"background":"#fff"});
+    $(".jz-header-nav li a").mouseover(function () {
+        $(this).next().css({"background": "#28a7e1"});
+    }).mouseout(function () {
+        $(this).next().css({"background": "#fff"});
     });
 </script>
 
-
-<div class="mainContainer q " id="main_container">
-
-    <div class="addContainer q" id="add_container" data-attr="h:0">
-        <div class="customModuleRow customModuleRowAbsolute "  id="row_48"    data-animated="" >
-
-
-            <div class="customModuleRowInner">
-                <div class="CModulePA" style="height:616px;">
-                    <div class="ev-module-edit ev-container ev-box-container"  id="evMo_2nF4vJ"  style="width:420px; height:85px; left:390px; top:96px; z-index:1;">
-                        <div class="ev-module-edit-box "  id="Mo_2nF4vJ" >
-                            <div class="ev-container-wap">
-                                <div  id="evMo_hIgdo7" class="ev-module-edit"  style="width:144px; height:47px; left:138px; top:19px; z-index:1;">
-                                    <div class="ev-module-text ev-module-edit-box"  id="Mo_hIgdo7">
-                                        <h2 class="ev-text-title-2" style="text-align:center;">
-                                            <span style="font-size:30px;color:#333333;">常见问题</span>
-                                        </h2>
-                                    </div>
-                                </div>    <div  id="evMo_oPdLpn" class="ev-module-edit"  style="width:90px; height:10px; left:33px; top:34px; z-index:2;">
-                                <div class="ev-module-edit-box"  id="Mo_oPdLpn">
-                                    <a href="###" >
-                                        <hr class="ev-line ev-line-1" />
-                                    </a>
-                                </div>
-                            </div>    <div  id="evMo_5nOIow" class="ev-module-edit"  style="width:11px; height:11px; left:123px; top:33px; z-index:3;">
-                                <div class="ev-module-edit-box"  id="Mo_5nOIow">
-                                    <a href="###" >
-                                        <div class="ev-base-shape ev-base-shape-1"></div>
-
-                                    </a>
-                                </div>
-                            </div>    <div  id="evMo_2NdFKY" class="ev-module-edit"  style="width:11px; height:11px; left:283px; top:33px; z-index:4;">
-                                <div class="ev-module-edit-box"  id="Mo_2NdFKY">
-                                    <a href="###" >
-                                        <div class="ev-base-shape ev-base-shape-1"></div>
-
-                                    </a>
-                                </div>
-                            </div>    <div  id="evMo_n4jIkI" class="ev-module-edit"  style="width:90px; height:10px; left:294px; top:34px; z-index:5;">
-                                <div class="ev-module-edit-box"  id="Mo_n4jIkI">
-                                    <a href="###" >
-                                        <hr class="ev-line ev-line-1" />
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>    <div class="ev-module-edit ev-container ev-box-container"  id="evMo_JqoB8W"  style="width:1200px; height:50px; left:0px; top:209px; z-index:2;">
-                    <div class="ev-module-edit-box  load-animate" data-animate-name="fadeInLeft" data-animate-duration="1.00s" data-animate-delay="0.10s" id="Mo_JqoB8W" >
-                        <div class="ev-container-wap">
-                            <div class="ev-container-bg"></div>
-                            <div  id="evMo_JW7kFe" class="ev-module-edit"  style="width:256px; height:50px; left:0px; top:0px; z-index:1;">
-                                <div class="ev-module-edit-box "  id="Mo_JW7kFe">
-                                    <a href="###" >
-                                        <div class="ev-pic ev-pic-1 " >
-                                            <img   src=""     class="default-img lazy-loading"  data-original-src="//aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1010/2019199_1515384075.png?x-oss-process=image/resize,m_fixed,w_256,h_50,limit_0"  />
-
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>    <div  id="evMo_TDJqGi" class="ev-module-edit"  style="width:18px; height:18px; left:15px; top:16px; z-index:2;">
-                            <div class="ev-module-edit-box "  id="Mo_TDJqGi">
-                                <a href="###" >
-                                    <div class="ev-pic ev-pic-4 " >
-                                        <img   src=""     class="default-img lazy-loading"  data-original-src="//aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1010/2019212_1515384122.png?x-oss-process=image/resize,m_fixed,w_18,h_18,limit_0"  />
-
-                                    </div>
-                                </a>
-                            </div>
-                        </div>    <div  id="evMo_mZPt9v" class="ev-module-edit"  style="width:125px; height:25px; left:46px; top:15px; z-index:3;">
-                            <div class="ev-module-text ev-module-edit-box"  id="Mo_mZPt9v">
-                                <h4 class="ev-text-title-4">
-                                    <span style="font-size:18px;color:#FFFFFF;">工商注册问题</span>
-                                </h4>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>    <div   style="width:1200px; height:299px; left:0px; top:285px; z-index:3;" class="customModule "    >
-                    <div style="width:1200px;  height:299px;" class="Mo copyMo_1615724_1" data-classname="copyMo_1615724_1" id="Mo_44">
-
-                        <table class="MoT">
-                            <tbody>
-                            <tr>
-                                <td class="MoTL"></td>
-                                <td class="MoTM"></td>
-                                <td class="MoTR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <table class="MoHead">
-                            <tbody>
-                            <tr>
-                                <td class="MoHeadL"></td>
-                                <td valign="top" class="MoHeadM">
-                                    <table class="MoName">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="MoNameL"></td>
-                                            <td valign="top" class="MoNameM">
-                                                <strong class="NameTxt">
-                                                    <a  href="###">
-                                                        标题
-                                                    </a>
-                                                </strong>
-                                            </td>
-                                            <td valign="top" class="MoNameR"></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                    <span class="MoMore">
-                        <a  href="###">&#26356;&#22810;</a>
-                    </span>
-                                </td>
-                                <td class="MoHeadR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <table class="MoBody">
-                            <tbody>
-                            <tr>
-                                <td class="MoBodyL"></td>
-                                <td valign="top" class="MoBodyM">
-                                    <div style="width:1200px;  height:299px;" class="MoBodyC">
-                                        <div class="pic-text-list-module pic-text-list-module-1  "     data-move="0" data-axis="0" data-speed="0" data-type="0" id="prolist_3909742" data-interact="a:0,t:0" >
-                                            <ul class="q ">
-                                                <li>
-                                                    <div class="inner">
-
-                                                        <div class="pic-attr">
-                                                            <h3 class="pic-title">
-                                                                <a class=""  >1、我没有注册地址怎么办？</a>
-                                                            </h3>
-
-                                                            <div class="pic-intro"><p>为你介绍入驻集中办公区，提供安全、可靠、低价的注册地址。</p></div>
-
-                                                        </div>
-                                                    </div>
-                                                </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >2、注册100万的公司，需要一次缴清吗？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>不行，被吊销后你会上工商和税务机关的黑名单，工商一般3年自动解除，税务必须缴纳罚款后才能解除。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >3、我以前注册的公司被吊销了？能注册新公司吗？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>不行，被吊销后你会上工商和税务机关的黑名单，工商一般3年自动解除，税务必须缴纳罚款后才能解除。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            </ul>
-                                        </div>
-                                        <div  class="page" data-page="5" data-skin="skin-1" data-total="3" data-pagedatanum="10" data-curpage="1" data-pagegroups="0">
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="MoBodyR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <table class="MoB">
-                            <tbody>
-                            <tr>
-                                <td class="MoBL"></td>
-                                <td class="MoBM"></td>
-                                <td class="MoBR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-                </div>
-            </div>
+<div class="zcgs_bg">
+    <h1 class="title_h1">工商注册</h1>
+    <p class="title_p">工商注册全程专业代理，<span>顺利领取营业执照</span></p>
+    <button class="title_button" onclick="openZoosUrl()">联系我们</button>
+    <div class="title_line"></div>
+</div>
+<div class="nssb_content">
+    <div class="gszc01">
+        <div class="gszc_content1">
+            <h1>服务说明</h1>
+            <P>1、营业执照（三证合一新版执照）
+                <br>
+                <br>
+                2、印章备案（公章、法人章、财务专用章、发票章、合同专用章）
+                <br>
+                <br>
+                3、开立公司基本户 （官费自付）</P>
+            <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2 style=" margin-top: 33px;">
+                详情咨询>></h2></a>
         </div>
-        <div class="customModuleRow customModuleRowAbsolute "  id="row_49"    data-animated="" >
-
-
-            <div class="customModuleRowInner">
-                <div class="CModulePA" style="height:613px;">
-                    <div class="ev-module-edit ev-container ev-box-container"  id="evMo_Gg9W0Z"  style="width:1200px; height:50px; left:0px; top:0px; z-index:1;">
-                        <div class="ev-module-edit-box  load-animate" data-animate-name="fadeInLeft" data-animate-duration="1.00s" data-animate-delay="0.10s" id="Mo_Gg9W0Z" >
-                            <div class="ev-container-wap">
-                                <div class="ev-container-bg"></div>
-                                <div  id="evMo_yhm3DB" class="ev-module-edit"  style="width:256px; height:50px; left:0px; top:0px; z-index:1;">
-                                    <div class="ev-module-edit-box "  id="Mo_yhm3DB">
-                                        <a href="###" >
-                                            <div class="ev-pic ev-pic-1 " >
-                                                <img   src=""     class="default-img lazy-loading"  data-original-src="//aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1010/2019199_1515384075.png?x-oss-process=image/resize,m_fixed,w_256,h_50,limit_0"  />
-
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>    <div  id="evMo_VpVDf6" class="ev-module-edit"  style="width:17px; height:18px; left:15px; top:16px; z-index:2;">
-                                <div class="ev-module-edit-box "  id="Mo_VpVDf6">
-                                    <a href="###" >
-                                        <div class="ev-pic ev-pic-4 " >
-                                            <img   src=""     class="default-img lazy-loading"  data-original-src="//aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1010/2019318_1515384650.png?x-oss-process=image/resize,m_fixed,w_17,h_18,limit_0"  />
-
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>    <div  id="evMo_E9ufXQ" class="ev-module-edit"  style="width:165px; height:25px; left:46px; top:15px; z-index:3;">
-                                <div class="ev-module-text ev-module-edit-box"  id="Mo_E9ufXQ">
-                                    <h4 class="ev-text-title-4">
-                                        <span style="font-size:18px;color:#FFFFFF;">代理记账常见问题</span>
-                                    </h4>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>    <div   style="width:1200px; height:498px; left:0px; top:76px; z-index:2;" class="customModule "    >
-                    <div style="width:1200px;  height:498px;" class="Mo copyMo_1615724_1" data-classname="copyMo_1615724_1" id="Mo_45">
-
-                        <table class="MoT">
-                            <tbody>
-                            <tr>
-                                <td class="MoTL"></td>
-                                <td class="MoTM"></td>
-                                <td class="MoTR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <table class="MoHead">
-                            <tbody>
-                            <tr>
-                                <td class="MoHeadL"></td>
-                                <td valign="top" class="MoHeadM">
-                                    <table class="MoName">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="MoNameL"></td>
-                                            <td valign="top" class="MoNameM">
-                                                <strong class="NameTxt">
-                                                    <a  href="###">
-                                                        标题
-                                                    </a>
-                                                </strong>
-                                            </td>
-                                            <td valign="top" class="MoNameR"></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                    <span class="MoMore">
-                        <a  href="###">&#26356;&#22810;</a>
-                    </span>
-                                </td>
-                                <td class="MoHeadR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <table class="MoBody">
-                            <tbody>
-                            <tr>
-                                <td class="MoBodyL"></td>
-                                <td valign="top" class="MoBodyM">
-                                    <div style="width:1200px;  height:498px;" class="MoBodyC">
-                                        <div class="pic-text-list-module pic-text-list-module-1  "     data-move="0" data-axis="0" data-speed="0" data-type="0" id="prolist_3909743" data-interact="a:0,t:0" >
-                                            <ul class="q ">
-                                                <li>
-                                                    <div class="inner">
-
-                                                        <div class="pic-attr">
-                                                            <h3 class="pic-title">
-                                                                <a class=""  >1、代理记账业务，每月需要提供哪些资料？</a>
-                                                            </h3>
-
-                                                            <div class="pic-intro"><p>公司需要提供当月实际发生的收入成本类票据，包括：原始票据（收入、费用、成本类）、银行回单、银行对账单、其他账目原始凭证等。</p></div>
-
-                                                        </div>
-                                                    </div>
-                                                </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >2、公司提供的票据，只要是写了公司名称，就可以做账使用吗？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>发票合规性检查，除了检查付款人名称，还包括发票的签章、日期等；收入类发票必须当月做账，成本费用的发票在一个自然年度内可以做账，隔年的费用票是不能入账的。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >3、公司注册资本写多少合适？是否需要一次缴清？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>除小部分特殊行业外，注册资本一般无特别要求。10-100万可以，低于10万也可以。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >4、公司当月票据，如何给你们？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>每月30日前客户需将当月票据邮寄给我们，我们会整理、归纳并完成做账工作。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >5、购买了代理记账服务，能否同时提供部分财税咨询服务？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>小微的专业人员了解公司的业务情况，有利于账务处理的更为精准，所以专业人员会定期与公司沟通，在沟通的同时提供部分免费财税咨询服务。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            </ul>
-                                        </div>
-                                        <div  class="page" data-page="5" data-skin="skin-1" data-total="5" data-pagedatanum="10" data-curpage="1" data-pagegroups="0">
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="MoBodyR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <table class="MoB">
-                            <tbody>
-                            <tr>
-                                <td class="MoBL"></td>
-                                <td class="MoBM"></td>
-                                <td class="MoBR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-                </div>
-            </div>
+        <img src="https://wlsonsult.com/img/nssb_01.png" class="nssb_img">
+        <div class="clear"></div>
+    </div>
+    <div class="gszc01" style="margin-left: 70px;">
+        <div class="gszc_content1">
+            <h1>服务流程</h1>
+            <img src="http://aimg8.dlszywz.com/ueditor/image/683/1365035/1484897353142047.jpg"
+                 title="1484897333882575.jpg" alt="1456480968380443.jpg">
+            <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2 style=" margin-top: 5px;">
+                详情咨询>></h2></a>
         </div>
-        <div class="customModuleRow customModuleRowAbsolute "  id="row_50"    data-animated="" >
-            <div class="customModuleRowInner">
-                <div class="CModulePA" style="height:683px;">
-                    <div class="ev-module-edit ev-container ev-box-container"  id="evMo_aYZLhR"  style="width:1200px; height:50px; left:0px; top:0px; z-index:1;">
-                        <div class="ev-module-edit-box  load-animate" data-animate-name="fadeInLeft" data-animate-duration="1.00s" data-animate-delay="0.10s" id="Mo_aYZLhR" >
-                            <div class="ev-container-wap">
-                                <div class="ev-container-bg"></div>
-                                <div  id="evMo_98QWyd" class="ev-module-edit"  style="width:256px; height:50px; left:0px; top:0px; z-index:1;">
-                                    <div class="ev-module-edit-box "  id="Mo_98QWyd">
-                                        <a href="###" >
-                                            <div class="ev-pic ev-pic-1 " >
-                                                <img   src=""     class="default-img lazy-loading"  data-original-src="//aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1010/2019199_1515384075.png?x-oss-process=image/resize,m_fixed,w_256,h_50,limit_0"  />
-
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>    <div  id="evMo_3TZouB" class="ev-module-edit"  style="width:16px; height:20px; left:15px; top:16px; z-index:2;">
-                                <div class="ev-module-edit-box "  id="Mo_3TZouB">
-                                    <a href="###" >
-                                        <div class="ev-pic ev-pic-4 " >
-                                            <img   src=""     class="default-img lazy-loading"  data-original-src="//aimg8.dlszyht.net.cn/module/simplepicbackground/1615724/1010/2019369_1515385259.png?x-oss-process=image/resize,m_fixed,w_16,h_20,limit_0"  />
-
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>    <div  id="evMo_UFqzmz" class="ev-module-edit"  style="width:165px; height:25px; left:46px; top:15px; z-index:3;">
-                                <div class="ev-module-text ev-module-edit-box"  id="Mo_UFqzmz">
-                                    <h4 class="ev-text-title-4">
-                                        <span style="font-size:18px;color:#FFFFFF;">商标注册常见问题</span>
-                                    </h4>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>    <div   style="width:1200px; height:498px; left:0px; top:76px; z-index:2;" class="customModule "    >
-                    <div style="width:1200px;  height:498px;" class="Mo copyMo_1615724_1" data-classname="copyMo_1615724_1" id="Mo_46">
-
-                        <table class="MoT">
-                            <tbody>
-                            <tr>
-                                <td class="MoTL"></td>
-                                <td class="MoTM"></td>
-                                <td class="MoTR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <table class="MoHead">
-                            <tbody>
-                            <tr>
-                                <td class="MoHeadL"></td>
-                                <td valign="top" class="MoHeadM">
-                                    <table class="MoName">
-                                        <tbody>
-                                        <tr>
-                                            <td valign="top" class="MoNameL"></td>
-                                            <td valign="top" class="MoNameM">
-                                                <strong class="NameTxt">
-                                                    <a  href="###">
-                                                        标题
-                                                    </a>
-                                                </strong>
-                                            </td>
-                                            <td valign="top" class="MoNameR"></td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                    <span class="MoMore">
-                        <a  href="###">&#26356;&#22810;</a>
-                    </span>
-                                </td>
-                                <td class="MoHeadR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <table class="MoBody">
-                            <tbody>
-                            <tr>
-                                <td class="MoBodyL"></td>
-                                <td valign="top" class="MoBodyM">
-                                    <div style="width:1200px;  height:498px;" class="MoBodyC">
-                                        <div class="pic-text-list-module pic-text-list-module-1  "     data-move="0" data-axis="0" data-speed="0" data-type="0" id="prolist_3909744" data-interact="a:0,t:0" >
-                                            <ul class="q ">
-                                                <li>
-                                                    <div class="inner">
-
-                                                        <div class="pic-attr">
-                                                            <h3 class="pic-title">
-                                                                <a class=""  >1、商标注册查询很麻烦吗？</a>
-                                                            </h3>
-
-                                                            <div class="pic-intro"><p>15分钟完成查询并推荐注册类别。</p></div>
-
-                                                        </div>
-                                                    </div>
-                                                </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >2、商标注册多久能下受理通知书？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>自申请之日起，3-4个月下发商标受理通知书。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >3、商标未提出注册申请，是否可推广使用？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>除小部分特殊行业外，注册资本一般无特别要求。10-100万可以，低于10万也可以。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >4、商标图上什么时候可以打“R”？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>公司当月票据，如何给你们？</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li><li>
-                                                <div class="inner">
-
-                                                    <div class="pic-attr">
-                                                        <h3 class="pic-title">
-                                                            <a class=""  >5、商标注册通过率高吗？</a>
-                                                        </h3>
-
-                                                        <div class="pic-intro"><p>商标注册的通过率在很大程度上取决于商标本身，不符合法定要求或跟已经注册的商标近似程度过高，都会导致注册不成功。</p></div>
-
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            </ul>
-                                        </div>
-                                        <div  class="page" data-page="5" data-skin="skin-1" data-total="5" data-pagedatanum="10" data-curpage="1" data-pagegroups="0">
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="MoBodyR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                        <table class="MoB">
-                            <tbody>
-                            <tr>
-                                <td class="MoBL"></td>
-                                <td class="MoBM"></td>
-                                <td class="MoBR"></td>
-                            </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-                </div>
-            </div>
+        <img src="https://wlsonsult.com/img/nssb_02.png" class="nssb_img">
+        <div class="clear"></div>
+    </div>
+    <div class="gszc01">
+        <div class="gszc_content1">
+            <h1>所需材料</h1>
+            <P>公司名称3-4个,重名时备用
+                <br>
+                确定注册资金数额, 法人、股东，及投资比例
+                <br>
+                公司营业经营范围
+                <br>
+                经营场所产权证明及租赁协议复印件
+                <br>
+                法人、股东身份证
+                <br>
+                经营范围涉及前置许可项目的，应提交有关审批部门的批准文件</P>
+            <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2 style=" margin-top: 30px;">
+                详情咨询>></h2></a>
         </div>
+        <img src="https://wlsonsult.com/img/nssb_03.png" class="nssb_img">
+        <div class="clear"></div>
+    </div>
+    <div class="gszc01" style="margin-left: 70px;">
+        <div class="gszc_content1">
+            <h1>服务流程</h1>
+            <P>微信、官网下单--及时反馈
+                <br>
+                咨询顾问定制服务方案
+                <br>
+                确定服务方案，在线付款
+                <br>
+                服务顾问提供贴心服务
+                <br>
+                全程跟进后续服务
+            </P>
+            <a target="_blank" href="javascript:void(0);" onclick="openZoosUrl();"><h2 style=" margin-top: 12px;">
+                详情咨询>></h2></a>
+        </div>
+        <img src="https://wlsonsult.com/img/nssb_04.png" class="nssb_img">
+        <div class="clear"></div>
     </div>
 </div>
-
 
 <div class="clear blank30"></div>
 <script type="text/javascript">
@@ -758,7 +294,8 @@
             <div id="evMo_JSb9iO" class="ev-module-edit"
                  style="width:351px; height:78px; left:486px; top:234px; z-index:7;">
                 <div class="ev-module-text ev-module-edit-box" id="Mo_JSb9iO">
-                    <p class="ev-text-article-4"><span style="font-size:14px;color:#CCCCCC;">地址：</span><span style="color:#CCCCCC;">廊坊市广阳区</span><span style="color:#CCCCCC;">——万达广场C区5号楼-1-21</span>
+                    <p class="ev-text-article-4"><span style="font-size:14px;color:#CCCCCC;">地址：</span><span
+                            style="color:#CCCCCC;">廊坊市广阳区</span><span style="color:#CCCCCC;">——万达广场C区5号楼-1-21</span>
                     </p>
                     <p class="ev-text-article-4"><br></p>
                 </div>
@@ -785,7 +322,11 @@
                 <center id="c2"></center>
             </div>
             <div style="width:300px;margin:0 auto; padding:20px 0;">
-                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13100302000919" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/img/beian.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">冀公网安备 13100302000919号</p></a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=13100302000919"
+                   style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img
+                        src="/img/beian.png" style="float:left;"/>
+                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">冀公网安备
+                        13100302000919号</p></a>
             </div>
             <!--COPYRIGHT START-->
         </div>
